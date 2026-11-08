@@ -973,7 +973,8 @@ dialog[open] .modal-card { animation: pop 0.28s ease; }
 @media (max-width: 920px) {
   .site-header { height: auto; }
   .bar { flex-direction: column; align-items: stretch; padding: 12px 0; gap: 10px; }
-  .nav { justify-content: space-between; gap: 10px 12px; flex-wrap: wrap; }
+  .nav { justify-content: flex-start; gap: 8px 14px; flex-wrap: wrap; }
+  .nav a { font-size: 0.92rem; }
   .section-head { flex-direction: column; align-items: start; }
   .result-line { white-space: normal; }
   .filters, .form-grid { grid-template-columns: 1fr; }

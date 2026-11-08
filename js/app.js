@@ -199,7 +199,7 @@
       return allJobs().find(function (job) { return job.id === id; });
     }).filter(Boolean);
     list.innerHTML = jobs.map(function (job) {
-      return "<li><strong>" + esc(job.title) + "</strong><span>" + esc(job.maker) + " · " + esc(job.duration) + "</span></li>";
+      return "<li><strong>" + esc(job.title) + "</strong> <span>" + esc(job.maker) + " · " + esc(job.duration) + "</span></li>";
     }).join("");
     empty.hidden = jobs.length > 0;
     document.querySelectorAll("[data-signup-count]").forEach(function (badge) {
